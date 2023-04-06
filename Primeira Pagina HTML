@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+<h1> Minha primeira Pagina HTML </h1>
+
+<br> 
+<br>
+<br>
+<br>
+<a href="http://www.linkedin.com/in/thiago-chechia-313618152">CLIQUE AQUI</a>!
+	<br> 
+	<br>
+
+<script>
+
+alert("Este e o meu perfil no linkedin");
+
+</script>
