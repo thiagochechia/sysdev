@@ -1,0 +1,63 @@
+import random
+
+# Dicionário com as opções de cada nível de atendimento
+opcoes_nivel1 = {
+    '1': 'Atendimento ao Cliente',
+    '2': 'Suporte Técnico',
+    '3': 'Vendas',
+    '4': 'Sair'
+}
+
+opcoes_nivel2 = {
+    '1': 'Problemas com a conexão à Internet',
+    '2': 'Problemas com software',
+    '3': 'Problemas com hardware',
+    '4': 'Voltar'
+}
+
+opcoes_nivel3 = {
+    '1': 'https://www.google.com',
+    '2': 'https://www.facebook.com',
+    '3': 'https://www.twitter.com'
+}
+
+# Mensagens para orientar o usuário durante a conversa
+msg_nivel1 = 'Escolha uma opção para atendimento:\n1. Atendimento ao Cliente\n2. Suporte Técnico\n3. Vendas\n4. Sair\n'
+msg_nivel2 = 'Escolha uma opção para atendimento:\n1. Problemas com a conexão à Internet\n2. Problemas com software\n3. Problemas com hardware\n4. Voltar\n'
+msg_nivel3 = 'Acesse o link a seguir:\n'
+
+# Loop principal do chatbot
+while True:
+    nivel = 1
+    escolha = ''
+    resposta = ''
+    
+    while nivel == 1:
+        escolha = input(msg_nivel1)
+        if escolha in opcoes_nivel1:
+            if escolha == '4':
+                print('Até logo!')
+                break
+            nivel = 2
+        else:
+            print('Desculpe, não entendi sua escolha. Por favor, tente novamente.')
+    
+    while nivel == 2:
+        escolha = input(msg_nivel2)
+        if escolha in opcoes_nivel2:
+            if escolha == '4':
+                nivel = 1
+                escolha = input('Deseja reiniciar o atendimento? (s/n): ')
+                if escolha.lower() == 'n':
+                    break
+            else:
+                nivel = 3
+                resposta = opcoes_nivel3[escolha]
+        else:
+            print('Desculpe, não entendi sua escolha. Por favor, tente novamente.')
+    
+    if nivel == 3:
+        print(msg_nivel3 + resposta)
+    
+    if escolha == '4':
+        break
