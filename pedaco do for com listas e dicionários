@@ -1,0 +1,32 @@
+
+print('BEM VINDO AO CHATBOT DO PROJETO VAMO AI / RESILIA')
+print('Digite o numero correspondente nas opcoes abaixo para atendimento virtual')
+
+menuprincipal= ['1 - Area do Aluno ' ,'2 - Ajuda ','3 - Fale Conosco' ,'4 - Sair'] 
+for valor in menuprincipal:
+    print(valor)
+
+    ###################################################
+
+    nivel2escolha1 = ['1 - Meu Curso ' ,'2 - Dicas e Utilidades' ,'3 - Comunicados' ,'4 - Sair']
+    nivel2escolha2 = ['1 - Monitoria ' ,'2 - Painel de Duvidas' ,'3 - F.A.Q.' ,'4 - Sair']
+    nivel2escolha3 = ['1 - Endereco ' ,'2 - Telefone' ,'3 - Email' ,'4 - Sair']
+    nivel3escolha1N2 = ['1 - https://aluno.resilia.work/dashboard ' ,'2 - www.discord.com/turmavamoai/dicaseutilidades' ,'3 - www.discord.com/turmavamoai/comunicados' ,'4 - Sair']
+    nivel3escolha2N2 = ['1 - www.discord.com/turmavamoai/monitoria ' ,'2 - www.discord.com/turmavamoai/paineldeduvidas' ,'3 - www.discord.com/turmavamoai/faq' ,'4 - Sair']
+    nivel3escolha3N3 = ['1 - Rua vergueiro xx00x ' ,'+55113050xx56' ,'3 - atendimento@resilia.com.br' ,'4 - Sair']
+    
+
+
+        #Dicionario dos niveis
+nivel1 = {1:'1 - Area do Aluno ',2:'2 - Ajuda ',3:'3 - Fale Conosco',4:'4 - Sair '}
+nivel2resposta1 = {1:'1 - Meu Curso ',2:'2 - Dicas e Utilidades ',3:'3 - Comunicados',4:'4 - Sair '}
+nivel3respostas1 = {1:' https://aluno.resilia.work/dashboard ',2:'www.discord.com/turmavamoai/dicaseutilidades',3:'www.discord.com/turmavamoai/comunicados',4:' Sair '}
+#niveis acima representam o nivel 1 , clicando no 1 , depois novamente
+
+nivel2resposta2 = {1:'1 - Monitoria ',2:'2 - Painel de Duvidas ',3:'3 - F.A.Q.',4:'4 - Sair '}
+nivel3respostas2 = {1:'1 - www.discord.com/turmavamoai/monitoria ',2:' www.discord.com/turmavamoai/paineldeduvidas',3:'www.discord.com/turmavamoai/faq',4:' Sair '}
+#mesma coisa acima o nivel representa a escolha da opcao 2 Ajuda no menu principal
+
+nivel2resposta3 = {1:'1 - Endereco Telefone ',2: '2 -Telefone' ,3:'3 - Email ',4:'4 - Sair '}
+nivel3resposta3 = {1:' Rua vergueiro xx00x ',2:'+55113050xx56 ',3:'atendimento@resilia.com.br',4:' Sair '}
+#mesma coisa as respostas acima respresentam a escolha do usuario se cilcar no 3
